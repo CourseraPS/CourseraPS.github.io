@@ -1,6 +1,6 @@
 (function(){
-    angular.module("lunchbox", [])
-    .controller("lunchboxcontroller", myfood);
+    angular.module("LunchCheck", [])
+    .controller("LunchCheckController", myfood);
 
     myfood.$inject=["$scope"];
     function myfood($scope){
