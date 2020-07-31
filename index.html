@@ -1,66 +1,58 @@
-<!--
-<!doctype html>
-<html lang="en" ng-app="NarrowItDownApp">
-  <head>
-    <title>Narrow Down Your Menu Choice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="angular.min.js"></script>
-    <script type="text/javascript" src="app.js"></script>
-  </head>
-<body>
-   <div class="container" ng-controller="NarrowItDownController as menu">
-    <h1>Narrow Down Your Chinese Menu Choice</h1>
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tourism Website</title>
+        <link href="style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="Angular JS/angular.min.js"></script>
 
-    <div class="form-group">
-      <input type="text" placeholder="search term" class="form-control" ng-model="menu.searchterm">
-    </div>
-    <div class="form-group narrow-button">
-      <button class="btn btn-primary" ng-click="menu.getmatchedmenuitem(searchterm);">Narrow It Down For Me!</button>
-    </div>
+    </head>
+    <body>
+        <!--Navigation-->
+        <div class="bg">
+            <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: rgb(35, 36, 36); ">
+                <div class="container-fluid">
+                    <a /*class="navbar-brand" href="#"><img src="logos/mylogo4.png"></a>
+                    <ul class="nav navbar-nav navbar-center">
+                        <li><h1>VENTO</h1></li>
+                    </ul>
+                    
+                    <!--<button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" ></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive" >
+                        <ul class="navbar-nav ml-auto" >
+                            <li class="nav-item active" >
+                                <a class="nav-link" href="#" style="color: rgb(49, 48, 48);">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: rgb(49, 48, 48);">Locations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: rgb(49, 48, 48);">Offers</a>
+                            </li>
+                            
+                        </ul>
 
-    <!-- found-items should be implemented as a component -->
-    <!--<found-items found-items="...." on-remove="...."></found-items>
-    <ul>
-      <li ng-repeat="item in menu.found" >
-        {{item.name}}
-      </li>
-    </ul>
-    
-  </div>
+                    </div>-->
+                </div>
+            </nav>
+            <div class="container ">
+                <div class=" justify-content-center ">
+                  <div class="searchbar">
+                    <input class="search_input" type="text" name="" placeholder="Where are you going?">
+                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                  </div>
+                </div>
+            </div>
+              
+        </div>
 
-</body>
-</html>-->
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Narrow Down Your Menu Choice</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="bootstrap.min.css">
-    
-	<script src="angular.min.js"></script>
-    <script src="app.js"></script>
-  </head>
-<body ng-app="NarrowItDownApp">
-   <div class="container" ng-controller='NarrowItDownController as menu'>
-    <h1>Narrow Down Your Chinese Menu Choice</h1>
-
-    <div class="form-group">
-      <input type="text" placeholder="search term" class="form-control" ng-model="menu.searchTerm">
-    </div>
-    <div class="form-group">
-      <button class="btn btn-primary" ng-click="menu.narrowItDown(menu.searchTerm);">Narrow It Down For Me!</button>
-    </div>
-
-    <ul>
-      <li ng-repeat="item in menu.found">
-        {{item.name}} , {{item.short_name}} , {{item.description}}
-        <button class="btn btn-warning" ng-click="menu.removeItem($index);">Don't want this one!</button>
-      </li>
-      <div class="alert alert-info" ng-if="menu.checkFoundList()">Nothing found</div>
-    </ul>
-  </div>
-
-</body>
+        
+    </body>
 </html>

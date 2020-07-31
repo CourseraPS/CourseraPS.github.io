@@ -1,0 +1,123 @@
+/*Name this external file gallery.css*/
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+  }
+  .container-fluid img{
+    width: 90px;
+}
+
+.container-fluid h1{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(187, 184, 184);
+    
+}
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+
+
+  .bg {
+    /* The image used */
+    background-image: url("images/travelimg.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .searchbar{
+    margin-bottom: auto;
+    margin-top: auto;
+    height: 60px;
+    background-color: #353b48;
+    border-radius: 30px;
+    padding: 10px;
+    
+    }
+
+    .search_input{
+    color: white;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    caret-color:transparent;
+    line-height: 40px;
+    transition: width 0.4s linear;
+    
+    }
+
+    .searchbar  .search_input{
+    padding: 0 10px;
+    width: 450px;
+    caret-color:red;
+    transition: width 0.4s linear;
+    font-size: 25px;
+    font-variant: small-caps;
+    justify-content: center;
+    
+    }
+
+    .searchbar:hover  .search_icon{
+    background: white;
+    color: #df2424;
+    text-decoration:none;
+    
+    }
+
+    .search_icon{
+    height: 40px;
+    width: 40px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    text-decoration:none;
+    
+    }
+    .container{
+        margin-top: 18%;
+        
+    }
+
+/*.input-group{
+    width: 90%;
+    max-width: 600px;
+    margin: 15% auto;
+    background-color: aquamarine;
+}
+.input-group input{
+    text-align: center;
+    
+}
+.form-control{
+    height: 60px !important;
+    border-radius: 30px 0 0 30px !important;
+    box-shadow: none !important;
+    background-image: url(logos/search--v1.png);
+    background-size: 8%;
+    background-repeat: no-repeat;
+    background-position: 2% 50%;
+
+}
+.input-group-text{
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(73, 70, 70));
+}
