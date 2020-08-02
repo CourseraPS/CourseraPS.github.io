@@ -31,7 +31,11 @@ body, html {
 .location{
     display: flex;
     flex-direction: row;
-    margin: auto 0;
+    align-items: center;
+    
+}
+.location i{
+    padding-bottom: 8px;
 }
 .line{
     border-left: 3px solid rgb(7, 83, 83);
@@ -41,7 +45,10 @@ body, html {
 .filter{
     display: flex;
     flex-direction: row;
-    margin: auto 0;
+    align-items: center;
+}
+.filter i{
+    padding-bottom: 8px;
 }
     .mycard{
         display: flex;
