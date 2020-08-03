@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tourism Website</title>
+        <link href="mystyle.css" rel="stylesheet"/>
+        <link href="bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="angular.min.js"></script>
+        <script src="app.js"></script>
+        
+        
+
+    </head>
+    <body ng-app="NarrowItDownApp">        
+            <section id="section1" ng-controller='NarrowItDownController as menu'>
+                <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4 bg-dark w-75 p-3" id="searchbar">
+                    <div class="input-group" >
+                      <div class="input-group-prepend" >
+                        <button id="button-addon2" type="submit" ng-click="menu.narrowItDown(menu.searchTerm);" class="btn btn-link text-warning rounded rounded-pill"><i class="fa fa-search"></i></button>
+                      </div>
+                      <input type="search" placeholder="Your favourite dish, example: Egg" aria-describedby="button-addon2" ng-model="menu.searchTerm" class="form-control text-white bg-dark rounded rounded-pill">
+                    </div>
+                </div>
+                <ul>
+                    <li ng-repeat="item in menu.found">
+                      {{item.name}} , {{item.short_name}} , {{item.description}}
+                      <button class="btn btn-warning" ng-click="menu.additem($index);">Don't want this one!</button>
+                    </li>
+                    <div class="alert alert-info" ng-if="menu.checkFoundList()">Nothing found</div>
+                  </ul>
+                
+            </section>
+            <div class="stripcontainer">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h5>Church Street</h5>
+                </div>
+                <div class="line">
+    
+                </div>
+                <div class="filter">
+                    <i class="fas fa-filter"></i>
+                    <h5>Birthday Party</h5>
+                </div>
+            </div>
+            <div class="mycard">
+                <div class="show">
+                    <img src="images/img5.jpeg">
+                </div>
+                <div class="info">
+                    <div class="heading">
+                        <h5 style="font-size: 40px;">Socials</h5>
+                        <p style="font-size: 20px; padding-left: 10px; color: grey;">5Km</p>
+                    </div>
+                    <div class="infocard">
+                        <div class="myinfo">
+                            <div class="icon"><i class="fas fa-glass-martini-alt"></i></div>
+                            <div class="type"><h5>Happy Hour</h5></div>
+                            <div class="time">9:00 PM</div>
+                        </div>
+                        <div class="myinfo">
+                            <div class="icon"><i class="fas fa-calendar-check"></i></div>
+                            <div class="type"><h5>Comedy Night</h5></div>
+                            <div class="time">9:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="stripcontainer">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h5>Church Street</h5>
+                </div>
+                <div class="line">
+    
+                </div>
+                <div class="filter">
+                    <i class="fas fa-filter"></i>
+                    <h5>Birthday Party</h5>
+                </div>
+            </div>  
+            <div class="mycard">
+                <div class="show">
+                    <img src="images/img4.jpeg">
+                </div>
+                <div class="info">
+                    <div class="heading">
+                        <h5 style="font-size: 40px;">Socials</h5>
+                        <p style="font-size: 20px; padding-left: 10px; color: grey;">5Km</p>
+                    </div>
+                    <div class="infocard">
+                        <div class="myinfo">
+                            <div class="icon"><i class="fas fa-glass-martini-alt"></i></div>
+                            <div class="type"><h5>Happy Hour</h5></div>
+                            <div class="time">9:00 PM</div>
+                        </div>
+                        <div class="myinfo">
+                            <div class="icon"><i class="fas fa-calendar-check"></i></div>
+                            <div class="type"><h5>Comedy Night</h5></div>
+                            <div class="time">9:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+        
+    </body>
+</html>

@@ -7,14 +7,13 @@
 
 body, html {
     height: 100%;
-    width: 100%;
   }
   .container-fluid img{
     width: 90px;
 }
 
 .container-fluid h1{
-    font-size: 60px;
+    font-size:60px;
     font-weight: 700;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(187, 184, 184);
@@ -30,7 +29,7 @@ body, html {
 
   .bg {
     /* The image used */
-    background-image: url("images/travelimg.jpg");
+    background-image: url("images/travell.jpg");
   
     /* Full height */
     height: 100%;
@@ -41,62 +40,285 @@ body, html {
     background-size: cover;
     background-attachment: fixed;
   }
-  .searchbar{
-    margin-bottom: auto;
-    margin-top: auto;
-    height: 60px;
-    background-color: #353b48;
-    border-radius: 30px;
-    padding: 10px;
+#searchbar{
+    max-width: 700px;
+    margin: 2% auto;
     
-    }
-
-    .search_input{
-    color: white;
-    border: 0;
-    outline: 0;
-    background: none;
-    width: 0;
-    caret-color:transparent;
-    line-height: 40px;
-    transition: width 0.4s linear;
-    
-    }
-
-    .searchbar  .search_input{
-    padding: 0 10px;
-    width: 450px;
-    caret-color:red;
-    transition: width 0.4s linear;
-    font-size: 25px;
+}
+.form-control{
     font-variant: small-caps;
-    justify-content: center;
+
+}
+
+.ml9 {
+    position: relative;
+    font-weight: 320;
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .ml9 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-bottom: -2vw;
     
+  }
+  
+  .ml9 .letter {
+    transform-origin: 50% 100%;
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+.culture{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+     text-align: center;
+     font-variant: small-caps;
+
+}
+
+.juna{
+        text-align: center;
+    }
+    .juna img{
+        width: 300px;
     }
 
-    .searchbar:hover  .search_icon{
-    background: white;
-    color: #df2424;
-    text-decoration:none;
+.heading{
+    text-align: center;
+    margin-top: 2%;
+}
+.holdingcontainer{
+    background-color: blanchedalmond;
+    text-decoration: none;
     
-    }
-
-    .search_icon{
-    height: 40px;
-    width: 40px;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color:white;
-    text-decoration:none;
-    
-    }
-    .container{
-        margin-top: 18%;
+}
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+@media(min-width:768px){
+    .row1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 3%;
+        
         
     }
+}
+@media(min-width:768px){
+    .row2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+i{
+    font-size: 20px;
+    padding-right: 4px !important;
+}
+.locn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.box1{
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+.box2{
+ 
+    text-align: center;
+    padding: 20px;
+}
+.box3{
+    text-align: center;
+    padding: 20px;
+}
+.box4{
+    text-align: center;
+    padding: 20px;
+}
+.box5{
+    text-align: center;
+    padding: 20px;
+    
+}
+.box6{
+    text-align: center;
+    padding: 20px;
+}
+
+.box1 img{
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+}
+.box2 img{
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+}
+.box3 img{
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+}
+.box4 img{
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+}
+.box5 img{
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+}
+.box6 img{
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+}
+
+#contact{
+    margin-top: 3%;
+    background-color: rgba(0, 0, 0, 0.863);
+    height: 700px;
+    color: rgba(255, 255, 255, 0.733);
+}
+#contact .heading{
+    padding-top: 2%;
+    text-align: center;
+    
+}
+.myinformation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 20px;
+    background-color: teal;
+}
+.myinformation p{
+    margin: auto 0;
+}
+.myinformation i{
+    padding-right: 2%;
+}
+.myinformation .box1{
+            
+            display: flex;
+            flex-direction: row;
+            padding-left: 20%;
+            align-items: center;
+            margin-bottom: 2%;
+            
+}
+.myinformation .box2{
+    
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.myinformation .box3{
+    
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    align-items: center;
+}
+#contact .social{
+    margin-top: 15%;
+}
+#contact .social-icons{
+    display: flex;
+    justify-content: center;
+}
+#contact .social-icons a{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            margin-right: 3%;
+            
+            box-shadow: 0 0 4px black;
+            transition: .6s;
+
+}
+#contact .social-icons i{
+    font-size: 30px;
+    color: black;
+    margin:20% auto;
+    
+    
+}
+#contact .social-icons i:hover{
+    color:white;
+    
+}
+#contact .social-icons a:hover{
+    transform: translate(0,-10px);
+    text-decoration: none;
+}
+#contact .social-icons .fb:hover{
+            background-color:#3b5999;
+}
+#contact .social-icons .insta:hover{
+    background-color:#e4405f;
+}
+#contact .social-icons .twit:hover{
+    background-color: #55acee;
+}
+#contact .social-icons .linked:hover{
+    background-color: #0077B5;
+}
+/*
+.describe{
+    background-image: linear-gradient(rgba(52, 54, 68),rgba(52, 54, 68));
+    max-width: 400px;
+    margin-bottom: 30px;
+    color: rgba(230, 230, 230, 0.739);
+    border-radius: 0 0 30px 30px;
+    vertical-align: middle;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    transition: .5s;
+    transition: linear;
+    font-variant: small-caps;
+    
+}
+.culture :hover{
+    transform: scale(1.1);
+}
+#features{
+    display: flex;
+    justify-content: center;
+    flex: 5em;
+}
+  
+/*
+.display{
+    text-align: center;
+    margin: 13% auto 2% auto;
+    color: rgb(87, 90, 81);
+    font-size: 4em;
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+}
 
 /*.input-group{
     width: 90%;

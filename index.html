@@ -10,10 +10,11 @@
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="Angular JS/angular.min.js"></script>
+        <script src="app.js"></script>
 
     </head>
-    <body>
-        <!--Navigation-->
+    <body ng-app="NarrowItDownApp">
+        <!--Home-->
         <div class="bg">
             <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: rgb(35, 36, 36); ">
                 <div class="container-fluid">
@@ -42,17 +43,139 @@
                     </div>-->
                 </div>
             </nav>
-            <div class="container ">
-                <div class=" justify-content-center ">
-                  <div class="searchbar">
-                    <input class="search_input" type="text" name="" placeholder="Where are you going?">
-                    <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+            
+            <h1 class="ml9">
+                <span class="text-wrapper">
+                  <span class="letters">Travel Bikaner</span>
+                </span>
+            </h1>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+              <script src="myscript.js"></script>
+            <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4 bg-dark w-75 p-3" id="searchbar">
+                <div class="input-group" >
+                  <div class="input-group-prepend" >
+                    <button id="button-addon2" type="submit" class="btn btn-link text-warning rounded rounded-pill"><i class="fa fa-search"></i></button>
                   </div>
+                  <input type="search" placeholder="Where are you going?" aria-describedby="button-addon2" class="form-control text-white bg-dark rounded rounded-pill">
                 </div>
             </div>
-              
+            
+            <div class="juna">
+                <img src="images/junag.png">
+            </div>
+            
+            <div id="explore">
+                <div class="culture">
+                   <h2 style="font-size: 40px;">Exciting places around you</h2>
+                   <p style="font-size: 20px;">Explore the rich culture of arts and crafts, dances, and festivals</p>
+                </div>
+            </div>
+            
         </div>
-
+        <!----Explore---->
+        <section class="features" >
+            <div class="heading">
+                <h2>Hotels & Restaurants</h2>
+            </div>
+            <div class="holdingcontainer">
+                <div class="row1">
+                    
+                    <div class="box1">
+                        <a href="internal.html"><img src="images/img1.jpg" >
+                        <h5>Lalji Hotel</h5>
+                            <div class="locn">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h5 style="color: grey;">Station Road</h5>
+                            </div>
+                        </a>
+                    </div>
+                   
+                    <div class="box2">
+                        <a href="internal.html"><img src="images/img2.jpeg" >
+                        <h5>Lallgrah Palace</h5>
+                        <div class="locn">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h5 style="color: grey;">Ganganagar Road</h5>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="box3">
+                        <a href="internal.html"><img src="images/img3.jpeg" >
+                        <h5>Heritage Hotel</h5>
+                        <div class="locn">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h5 style="color: grey;">Jaipur Road</h5>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="box4">
+                        <a href="internal.html"><img src="images/img4.jpeg" >
+                        <h5>The Prince Haveli</h5>
+                        <div class="locn">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h5 style="color: grey;">Mawa Paatti</h5>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="box5">
+                        <a href="internal.html"><img src="images/img5.jpeg" >
+                        <h5>Riddhi Siddhi Resort</h5>
+                        <div class="locn">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h5 style="color: grey;">Jaipur Jodhpur Bypass</h5>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="box6">
+                        <a href="internal.html"><img src="images/img6.jpeg" >
+                        <h5>Hotel Desert Wind</h5>
+                        <div class="locn">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h5 style="color: grey;">Opposite Maharaja Karni</h5>
+                        </div>
+                        </a>
+                        <h5 style="color: grey;"> Singh Stadium</h5>
+                        
+                    </div>
+                </div>
+              
+            </div>
+        </section>
+        <!--Contacts-->
+        <section id="contact">
+            <div class="container">
+              <div class="heading">
+                <h2>Get In Touch</h2>
+                <p style="font-size: 18px;">“If I had asked people what they wanted, they would have said faster horses. ”<br>
+                  - Henry Ford</p>
+              </div>
+              <hr style=" background-color: rgb(245, 245, 245, .5); width: 60%; margin: 0 auto;">
+              <div class="myinformation">
+                <div class="box1">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>Vindhyachal Hostel, IIT Delhi, Hauz Khas, New Delhi, 110016</p>
+                </div> 
+                <div class="box2">
+                  <i class="fas fa-mobile"></i>
+                  <p>+918890410233</p>
+                </div>
+                <div class="box3">
+                  <i class="fas fa-envelope"></i>
+                  <p><a href="mailto:sonipraveen255@gmail.com" style="color: rgba(245, 245, 245, 0.753);">sonipraveen255@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="social">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/praveen.soni.37266" target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/thee__ps_/" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/Praveen38427691" target="_blank" class="twit"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/praveen-soni-598500190/" target="_blank" class="linked"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+        </section>
         
     </body>
 </html>
